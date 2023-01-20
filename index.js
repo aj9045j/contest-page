@@ -10,7 +10,9 @@ const topcoder = "https://kontests.net/api/v1/top_coder"
 //y=prompt("Enter your name");
 
 const b = document.getElementById("write");
-
+const nam = document.getElementById("name");
+const hj = document.getElementById("hj");
+const start = document.getElementById("start");
 var cs = '<h1>CodeForces</h1>', cd = '<h1>CodeChef</h1>', ct = '<h1>AtCoder</h1>', lt = '<h1>LeetCode</h1>', kt = '<h1>KickStart</h1>', tt = '<h1>TopCoder</h1>', ht = '<h1>HackerRank</h1>', het = '<h1>HackerEarth</h1>';
 async function apis() {
     await fetch(codeforces).then((response) => response.json()).
@@ -221,7 +223,6 @@ check.addEventListener('click', () => {
 })
 const cf = document.getElementById("cf");
 cf.addEventListener('click', () => {
-    console.log("cf");
     b.innerHTML = cs;
 })
 const cc = document.getElementById("cc");

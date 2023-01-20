@@ -156,3 +156,7 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+#divv{
+    margin-top: 10vh;
+}
